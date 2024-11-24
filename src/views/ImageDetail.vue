@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { type ImageKey, images } from '@/data/images'
+
 const route = useRoute()
 const router = useRouter()
 
@@ -19,6 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <h1 class="mb-6 text-2xl font-bold">Image Detail</h1>
   <div v-if="image" class="p-4">
     <el-button class="mb-4" @click="router.push('/about')">
       <div class="i-lucide-arrow-left mr-2" />
